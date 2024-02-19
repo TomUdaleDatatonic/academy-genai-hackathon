@@ -12,7 +12,12 @@ You will have approximately 3 hours to complete the hackathon, and I encourage y
 Please complete the following to setup your environment for the hackathon. 
 
 1. Create a new jupyter notebook
-2. Install the requirements.txt
+2. Install the following packages:
+
+    ```
+    !pip install sqlalchemy-bigquery langchain-experimental==0.0.17 langchain==0.0.240 pydantic==1.10.12 gradio==3.44.4
+    ```
+
 3. Change the google cloud account to the authorised servie account:
 
     ```
@@ -103,6 +108,8 @@ display(Markdown(combined_chain("how many items did I sell in January 2023")))
 
 ## Grad IO
 
-## Grad IO chat
+You will now be able to run a demo UI for your solution using gradio. You should create a GradioIO interface with text input and output that takes our `combined_chain` as the function. ([**Documentation**](https://www.gradio.app/docs/interface)).
 
-## Pandas Agent
+
+
+
